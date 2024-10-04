@@ -12,25 +12,25 @@
             <div class="p-6">
                 <h2 class=" flex block mb-2 font-sans text-xl antialiased font-bold leading-snug tracking-normal text-blue-gray-900">
                     To Do List
-                    <img src="images/icon2.png" class="w-[20%] ml-[10px] mt-[-15px]">
+                    <img src="images/icon2.png" class="w-[20%] ml-[10px] mt-[-15px]" >
                 </h2>
 
                 <div class="flex items-center max-w-md mx-auto bg-white rounded-lg border border-[#5D35A1]-[10px] " x-data="{ search: '' }">
                     <div class="w-full">
-                        <input type="search" class="w-full px-4 py-1 text-gray-800 rounded-full focus:outline-none "
+                        <input type="search" id="inputBox" class="w-full px-4 py-1 text-gray-800 rounded-full focus:outline-none "
                             placeholder="Add your task" x-model="search">
                     </div>
                     <div>
                         <button type="submit" class="flex items-center bg-[#5D35A1] justify-center w-12 h-12 text-white rounded-r-lg"
                             :class="(search.length > 0) ? 'bg-purple-500' : 'bg-gray-500 cursor-not-allowed'"
                             :disabled="search.length == 0">
-                            <img src="images/add.png" alt="">
+                            <img src="images/add.png" alt="" id="add">
                         </button>
                     </div>
                 </div>
 
                 <ul id="listContainer" class="space-y-2">
-                    <li class="flex justify-between items-center border-b border-slate-200 py-3 px-2 border-l-4 border-l-transparent">
+                    <!-- <li class="flex justify-between items-center border-b border-slate-200 py-3 px-2 border-l-4 border-l-transparent">
 
                         <div class="inline-flex items-center space-x-2">
                             <div>
@@ -52,9 +52,9 @@
                             <div> Task 2 </div>
                         </div>
                         <div>
-                            <img src="images/deleteicon.png" class="w-6 h-6 text-slate-500 hover:text-slate-700 hover:cursor-pointer">
+                            <img src="images/deleteicon.png" class="w-6 h-6 text-slate-500 hover:bg-gray hover:cursor-pointer">
                         </div>
-                    </li>
+                    </li> -->
 
                 </ul>
 
@@ -62,5 +62,6 @@
             
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
