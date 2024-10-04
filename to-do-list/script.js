@@ -52,22 +52,10 @@ add.addEventListener('click', function(){
 
         // Finally, append the list item to the list container
         listContainer.appendChild(li);
-        
+       
 
     }
     inputBox.value = '';
 
-}
-);
-
-// function saveData(){
-//     localStorage.setItem('data', listContainer.innerHTML);
-// }
-// function showTask(){
-//     listContainer.innerHTML = localStorage.getItem('data');
-// }
-// showTask();
-
-
-
+});
 
