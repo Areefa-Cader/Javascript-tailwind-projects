@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="container w-full min-h-screen text-white p-[10px]" style="background:linear-gradient(135deg,#5FC69F,#196251);">
+        <div class="calculator w-[95%] md:w-[70%] lg:w-[45%] mt-[2%] md:mt-[10%] lg:mt-[10%] ml-[2%] md:ml-[10%] lg:ml-[10%]">
+            <h1 class="text-4xl font-bold font-menlo ml-[30px]">Age Calculator</h1>
+
+            <div class="input-box text-black m-[30px] p-[30px] rounded bg-[rgba(255,255,255,0.3)] flex flex-col md:flex-row items-center">
+                <input type="date"id="date" class="flex-1 ml-[18px] mr-[20px] py-[14px] px-[20px] border-0 outline-0 rounded-2 relative w-full md:w-auto">
+                <button id="calculate" class="py-[14px] px-[24px] bg-[#F2544B] text-white rounded-lg hover:shadow-[1px_1px_5px_5px_rgba(25,98,81,1)] w-full md:w-auto mt-[10px]">Calculate</button>
+            </div>
+
+            <p id="result" class="ml-[30px] font-serif text-xl text-black font-semibold" ></p>
+        </div>
+    </div>
+<script src="script.js"></script>    
+</body>
+</html>
