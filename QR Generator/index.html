@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Generator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+       .transition-max-height {
+            transition: max-height 1s;
+}
+
+    </style>
+</head>
+<body class="w-screen h-screen bg-[#808080] flex justify-center items-center">
+    <div class="container w-[30%] h-[60%] bg-white absolute rounded-lg p-4 text-black font-monaco">
+         <p class="text-2xl text-center mb-[10px] font-bold">Enter your Text or URL</p>
+         <input type="text" id="qrText" placeholder="Text or URL" class="w-[100%] outline-0 p-2 border-2 border-black mt-[15px] mb-[10px] rounded-lg"><br>
+         <div id="image-box" class="w-[150px] rounded-lg max-h-0 overflow-hidden transition-max-height">
+            <img src="" id="qrImg" class="w-[100%] p-2">
+         </div>
+         <button onclick="qrGenerate()" class="w-[100%] bg-[#083B6C] text-white p-1.5 rounded-full hover:bg-black my-[10px]">Generate QR Code</button>
+    </div>
+
+<script src="script.js"></script> 
+</body>
+</html>
