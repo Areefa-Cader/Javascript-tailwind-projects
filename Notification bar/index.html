@@ -3,9 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Notification Bar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/dc9544463f.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    
+<body class="w-screen h-screen bg-[#D8BCD1]">
+
+    <div class="buttons m-10 md:m-16 lg:m-16  flex flex-col md:flex-row items-center w-[70%]  md:w-[50%]  lg:w-[40%]">
+        <button onclick="showToast(successmsg)" class="ml-4 p-2 mb-4 bg-[#5FC69F] text-black w-[100%] rounded-full hover:shadow-[1px_3px_16px_9px_rgba(255,255,255,0.5)]">Success</button>
+        <button onclick="showToast(errorMsg)" class="ml-4 p-2 mb-4 bg-[#FF9B90] text-black w-[100%] rounded-full  hover:shadow-[1px_3px_16px_9px_rgba(255,255,255,0.5)]">Error</button>
+        <button onclick="showToast(invalidMsg)" class="ml-4 p-2 mb-4 bg-[#FFE494] text-black w-[100%] rounded-full  hover:shadow-[1px_3px_16px_9px_rgba(255,255,255,0.5)]">Invalid</button>
+    </div>
+
+    <div id="toastBox" class="absolute bottom-8 right-8 flex items-end flex-col p-4 overflow-hidden">
+
+    </div>
+
+<script src="script.js"></script>    
 </body>
 </html>
