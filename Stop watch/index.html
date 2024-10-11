@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/dc9544463f.js" crossorigin="anonymous"></script>
+</head>
+<body class="w-screen h-screen bg-[#BFA798] flex justify-center items-center">
+    <div class="container w-[85%] md:w-[40%] lg:w-[30%] h-[25%] md:h-[32%] lg:h-[32%] border-2 border-red  bg-cover bg-center text-center py-4 " 
+    style="background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(images/bgimg.jpg);">
+        <h1 class="text-white text-6xl font-menlo" id="displayTime">00:00:00</h1>
+        <div class="buttons flex justify-between p-8 text-4xl">
+            <button><i class="fa-regular fa-circle-stop text-white" onclick="watchStop()"></i></button>
+            <button><i class="fa-regular fa-circle-play text-white" onclick="startTimer()"  style="transform: scale(1.8);cursor: pointer"></i></button>
+            <button><i class="fa-solid fa-rotate-right text-white" onclick="reset()"></i></button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
