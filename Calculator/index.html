@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        input{
+            border: 0;
+            outline:0;
+            border-radius: 10px;
+            width: 50px;
+            height: 50px;
+            box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body class="w-screen h-screen flex justify-center items-center" style="background:linear-gradient(135deg,#DD5B66,#FFC175);">
+    <div class="calculator bg-[#1B385F] p-8 rounded-lg">
+        <form>
+            <div class="flex justify-end my-4">
+                <input type="text" name="display" id="display" class="flex-1 shadow-none text-right text-4xl bg-transparent text-[#F3C8CC]">
+            </div>
+            <div>
+                <input type="button" value="AC" onclick="display.value = ''" class="text-xl text-[#FFEAD1] hover:bg-[#FFEAD1] hover:text-black my-1 mx-1">
+                <input type="button" value="DE" id="delete" class="text-xl text-[#FFEAD1] hover:bg-[#FFEAD1] hover:text-black my-1 mx-1">
+                <input type="button" value="." onclick="display.value += '.'" class="text-xl text-[#FFEAD1] hover:bg-[#FFEAD1] hover:text-black my-1 mx-1">
+                <input type="button" value="/" onclick="display.value += '/'" class="text-xl text-[#FFEAD1] hover:bg-[#FFEAD1] hover:text-black my-1 mx-1">
+            </div>
+            <div>
+                <input type="button" value="7" onclick="display.value += '7'" class="text-xl text-[#F3C8CC] hover:bg-[#FFEAD1] hover:text-black my-1 mx-1">
+                <input type="button" value="8" onclick="display.value += '8'" class="text-xl text-[#F3C8CC] hover:bg-[#FFEAD1] hover:text-black my-1 mx-1">
+                <input type="button" value="9" onclick="display.value += '9'" class="text-xl text-[#F3C8CC] hover:bg-[#FFEAD1] hover:text-black my-1 mx-1">
+                <input type="button" value="*" onclick="display.value += '*'" class="text-xl text-[#FFEAD1] hover:bg-[#FFEAD1] hover:text-black my-1 mx-1">
+            </div>
+            <div>
+                <input type="button" value="4" onclick="display.value += '4'" class="text-xl text-[#F3C8CC] hover:bg-[#FFEAD1] hover:text-black my-1 mx-1">
+                <input type="button" value="5" onclick="display.value += '5'" class="text-xl text-[#F3C8CC] hover:bg-[#FFEAD1] hover:text-black my-1 mx-1">
+                <input type="button" value="6" onclick="display.value += '6'" class="text-xl text-[#F3C8CC] hover:bg-[#FFEAD1] hover:text-black my-1 mx-1">
+                <input type="button" value="-" onclick="display.value += '-'" class="text-xl text-[#FFEAD1] hover:bg-[#FFEAD1] hover:text-black my-1 mx-1">
+            </div>
+            <div>
+                <input type="button" value="1" onclick="display.value += '1'" class="text-xl text-[#F3C8CC] hover:bg-[#FFEAD1] hover:text-black my-1 mx-1">
+                <input type="button" value="2" onclick="display.value += '2'" class="text-xl text-[#F3C8CC] hover:bg-[#FFEAD1] hover:text-black my-1 mx-1">
+                <input type="button" value="3" onclick="display.value += '3'" class="text-xl text-[#F3C8CC] hover:bg-[#FFEAD1] hover:text-black my-1 mx-1">
+                <input type="button" value="+" onclick="display.value += '+'" class="text-xl text-[#FFEAD1] hover:bg-[#FFEAD1] hover:text-black my-1 mx-1">
+            </div>
+            <div>
+                <input type="button" value="00" onclick="display.value += '00'" class="text-xl text-[#F3C8CC] hover:bg-[#FFEAD1] hover:text-black my-1 mx-1">
+                <input type="button" value="0" onclick="display.value += '0'" class="text-xl text-[#F3C8CC] hover:bg-[#FFEAD1] hover:text-black my-1 mx-1">
+                <input type="button" value="=" id="equal" class="w-[112px] text-xl text-[#F3C8CC] hover:bg-[#FFEAD1] hover:text-black my-1 mx-1">
+            </div>
+        </form>
+    </div>
+ <script src="script.js"></script>   
+</body>
+</html>
