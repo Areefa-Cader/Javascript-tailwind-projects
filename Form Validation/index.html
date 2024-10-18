@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validate Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/dc9544463f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="py-20 px-9 h-screen w-screen bg-[#D4EBE6] ">
+        <div class="bg-white p-8 w-full md:w-2/3 lg:w-1/2 mx-auto rounded-xl shadow-[6px_6px_6px_rgba(19,54,47,0.9)] ">
+          
+      
+          <form >
+      
+            <!--       flex - asjad korvuti, nb! flex-1 - element kogu ylejaanud laius -->
+            <div class="flex items-center mb-5 ml-4">
+              <!--         tip - here neede inline-block , but why? -->
+              <label for="name" class="inline-block w-20 md:w-20 lg:w-20 mr-6 text-left
+                                       font-bold text-gray-600">Fullname</label>
+              <input type="text" id="name" name="name" placeholder="Name" 
+                     class="flex-1 py-2 border-b-2 border-gray-400 focus:border-[#143830] 
+                            text-gray-600 placeholder-gray-400
+                            outline-none" onkeyup="validateName()">
+              <span id="name-error" class="text-[13px]"></span>              
+            </div>
+
+            <div class="flex items-center mb-5 ml-4">
+                <!--         tip - here neede inline-block , but why? -->
+                <label for="number" class="inline-block w-20 mr-6 text-left
+                                         font-bold text-gray-600 ">Email</label>
+                <input type="email" id="email" name="email" placeholder="email" 
+                       class="flex-1 py-2 border-b-2 border-gray-400 focus:border-[#143830]
+                              text-gray-600 placeholder-gray-400
+                              outline-none" onkeyup="validateEmail()">
+                <span id="email-error" class="text-red-500 text-[13px] "></span> 
+            </div>
+      
+            <div class="flex items-center mb-5 ml-4">
+              <!--         tip - here neede inline-block , but why? -->
+              <label for="number" class="inline-block w-20 mr-6 text-left
+                                       font-bold text-gray-600 ">Phone No</label>
+              <input type="number" id="number" name="number" placeholder="number" 
+                     class="flex-1 py-2 border-b-2 border-gray-400 focus:border-[#143830] 
+                            text-gray-600 placeholder-gray-400
+                            outline-none" onkeyup="validateNumber()">
+              <span id="number-error" class="text-red-500 text-[13px] "></span>               
+            </div>
+      
+            <div class="flex items-center mb-5 ml-4">
+              <!--         tip - here neede inline-block , but why? -->
+              <label for="number" class="inline-block w-20 mr-6 text-left
+                                       font-bold text-gray-600 ">Date of Birth</label>
+              <input type="date" id="date" name="date" placeholder="date" 
+                     class="flex-1 py-2 border-b-2 border-gray-400 focus:border-[#143830] 
+                            text-gray-600 placeholder-gray-400
+                            outline-none" onchange="validateDate()">
+              <span id="dob-error" class="text-red-500 text-[13px] "></span> 
+            </div>
+
+            <div class="flex items-center mb-5 ml-4">
+                <!--         tip - here neede inline-block , but why? -->
+                <label for="number" class="inline-block w-20 mr-6 text-left 
+                                         font-bold text-gray-600">Upload CV</label>
+                <input type="file" id="file" name="file" placeholder="file" 
+                       class="flex-1 py-2 border-b-2 border-gray-400 focus:border-[#143830] 
+                              text-gray-600 placeholder-gray-400
+                              outline-none" onchange="validateFile()">
+                <span id="file-error" class="text-red-500 text-[13px] "></span> 
+              </div>
+      
+      
+           
+      
+      
+            <div class="text-center">
+              <button onclick="return submit(event)" type="submit"  class="py-3 px-8 bg-[#143830] rounded-full text-white font-bold hover:shadow-[0_6px_6px_rgba(19,54,47,0.7)]">Submit &nbsp;
+              <i class="fa-solid fa-paper-plane text-[#D4EBE6]"></i></button> <br> <br>
+              <span id="submit-error" class="text-red-500 text-[16px] "></span> 
+            </div>
+      
+          </form>
+        </div>
+      </div>
+<script src="script.js"></script>    
+</body>
+</html>
