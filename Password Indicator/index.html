@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Indicator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/dc9544463f.js" crossorigin="anonymous"></script>
+</head>
+<body class="w-screen h-screen bg-black flex justify-center items-center">
+    <div class="input-Box relative w-[400px] max-width-[90%] ml-4 md:ml-0 lg:ml-0">
+        <input type="password" name="password" id="password" placeholder="Password" maxlength="12" class="w-[95%] md:w-full lg:w-full h-[60px] p-[0_20px] border-2 border-[#C6C6C6] outline-0 text-white bg-transparent">
+        <button type="submit" class="absolute top-[35%] bg-white border-0 outline-none rounded-full  w-[40px] h-[40px] transform translate-y-[-50%] right-[10%] md:right-[4%] lg:right-[4%]"><i class="fa-solid fa-angle-right text-2xl"></i></button>
+        <br>
+        <br>
+        <p class="text-white hidden" id="message">Password is <span id="strength"></span></p>
+    </div>
+
+<script src="script.js"></script>    
+</body>
+</html>
