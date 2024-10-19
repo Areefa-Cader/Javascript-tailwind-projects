@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal Scroll</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/dc9544463f.js" crossorigin="anonymous"></script>
+    <style>
+        .gallery::-webkit-scrollbar{
+            display: none;
+        }
+    </style>
+</head>
+<body class="w-screen h-screen flex justify-center items-center"  style="background:linear-gradient(135deg,#083968,#8A3775);">
+
+    <div class="gallery-wrap flex justify-center items-center">
+        <i class="fa-solid fa-circle-chevron-left text-white text-3xl md:text-5xl lg:text-5xl m-4 md:m-8 lg:m-8 cursor-pointer hover:shadow-[0_4px_4px_rgba(255,255,255,0.5)] rounded-full" id="backBtn"></i>
+
+        <div class="gallery w-[600px] md:w-[650px] lg:w-[900px] flex overflow-x-scroll">
+            <div class="w-full grid grid-cols-[auto_auto_auto] md:grid-cols-[auto_auto_auto] lg:grid-cols-[auto_auto_auto]  gap-4 p-2 flex-none">
+                <span><img src="images/pic1.jpg" class="w-100% transform transition duration-500 hover:scale-110 cursor-pointer"></span>
+                <span><img src="images/pic4.jpg"  class="w-100% transform transition duration-500 hover:scale-110 cursor-pointer""></span>
+                <span><img src="images/pic6.jpg"  class="w-100% transform transition duration-500 hover:scale-110 cursor-pointer""></span>
+            </div> 
+            <div class="w-full grid grid-cols-[auto_auto_auto] md:grid-cols-[auto_auto_auto] lg:grid-cols-[auto_auto_auto]  gap-4 p-2 flex-none"> 
+                <span><img src="images/pic2.jpg"  class="w-100% transform transition duration-500 hover:scale-110 cursor-pointer""></span>
+                <span><img src="images/pic3.jpg"  class="w-100% transform transition duration-500 hover:scale-110 cursor-pointer""></span>
+                <span><img src="images/pic5.jpg"  class="w-100% transform transition duration-500 hover:scale-110 cursor-pointer""></span>
+            </div>
+        </div>
+
+        <i class="fa-solid fa-circle-chevron-right text-white text-3xl md:text-5xl lg:text-5xl m-4 md:m-8 lg:m-8 cursor-pointer hover:shadow-[0_4px_4px_rgba(255,255,255,0.5)] rounded-full" id="nextBtn"></i>
+    </div>
+   
+ <script src="script.js"></script>   
+</body>
+</html>
