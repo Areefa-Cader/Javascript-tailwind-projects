@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to Speech Convertor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/dc9544463f.js" crossorigin="anonymous"></script>
+
+</head>
+<body >
+
+    <div class="container flex flex-col items-center justify-center w-screen h-screen" style="background: linear-gradient(135deg,#204166, #86234A);">
+       <h2 class="text-3xl md:text-5xl lg:text-5xl font-bold font-[ui-sans-serif] text-white mt-[-50px] mb-[40px]">Text To Speech <span class="text-[#D6B5C2]">Convertor</span></h2>
+       <textarea id="textArea" placeholder="Write anything here....." class="w-[320px] md:w-[550px] lg:w-[550px] h-[180px] md:h-[250px] lg:h-[250px] border-0 outline-none text-white bg-white bg-opacity-50 rounded-xl p-8 resize-none mb-[20px] placeholder-gray-500"></textarea>
+       <div class="w-[320px] md:w-[550px] lg:w-[550px] flex-col md:flex-row lg:flex-row items-center gap-8">
+            <select name="" id="voiceOption" class="flex-1 text-black rounded-full p-[0_20px] md:p-[0_55px] lg:p-[0_55px] h-[45px] border-0 outline-none appearance-none bg-[#D6B5C2]"></select>
+            <i class="fa-solid fa-angle-down absolute right-[6%] md:right-[45%] lg:right-[42%] mt-[-8%] md:mt-[1.7%] lg:mt-[1.2%] text-black pointer-events-none"></i>
+            <button id="playBtn" class="button bg-[#D6B5C2] text-black py-2 px-8 text-xl rounded-full text-[ui-sans-serif] hover:bg-[#BB8CA6] hover:shadow-[0_6px_6px_rgba(187,140,166,0.6)]">
+                <i class="fa-solid fa-play text-black mr-[10px]"></i>Listen
+            </button>
+       </div> 
+    </div>
+ <script src="script.js"></script>   
+</body>
+</html>
