@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change effect on Background Image</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/dc9544463f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="container w-full h-screen flex justify-center items-center bg-[#D9D9D9]">
+        <div class="img-box border-2 border-blue-600 w-[50%] bg-[url(images/bg3.jpg)] overflow-hidden relative" id="imgBox">
+            <img src="images/bg2.png" class="w-full">
+            <div class="img-wrap">
+                <img src="images/bg1.jpg" class="absolute left-0 top-0 overflow-hidden" id="originalImage">
+            </div>
+        </div>
+        
+    </div>
+
+
+<script src="script.js"></script>    
+</body>
+</html>
