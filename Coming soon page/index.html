@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comnig soon Webpage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/dc9544463f.js" crossorigin="anonymous"></script>
+    <style>
+        .rocket{
+            animation: rocket 4s linear infinite;
+        }
+
+        @keyframes rocket {
+            0%{
+                bottom: 0;
+                opacity: 0.2;
+            }
+            100%{
+                bottom: 105%;
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container relative w-screen h-screen bg-[url(images/bg2.jpg)] bg-cover bg-center p-[0_2%]">
+       <img src="images/logo.png" class="w-[50px] md:w-[70px] lg:w-[80px] p-[20px_0]">
+
+       <div class="content text-white absolute top-[50%] transform translate-y-[-50%] ml-6 md:ml-4 lg:ml-4  ">
+        <p class="text-xl">Website is under maintanance </p>
+        <h1 class="font-bold text-3xl md:text-4xl lg:text-5xl mt-4 mb-6">We're <span class="text-[#C9356F]">Launching</span> Soon!!!</h1>
+
+        <div class="launch-time flex mb-6">
+            <div class="basis-[100px] ">
+                <p class="text-5xl md:text-6xl lg:text-6xl" id="days">00</p>
+                <span>Days</span>
+            </div>
+
+            <div class="basis-[100px]">
+                <p class="text-5xl md:text-6xl lg:text-6xl" id="hours">00</p>
+                <span>Hours</span>
+            </div>
+
+            <div class="basis-[100px]">
+                <p class="text-5xl md:text-6xl lg:text-6xl" id="minutes">00</p>
+                <span>Minutes</span>
+            </div>
+
+            <div class="basis-[100px]">
+                <p class="text-5xl md:text-6xl lg:text-6xl" id="seconds">00</p>
+                <span>Seconds</span>
+            </div>
+        </div>
+
+        <button type="button" class="bg-transparent outline-0 px-6 py-2 border-2 border-white text-lg"> Learn More
+            <i class="fa-solid fa-play text-white ml-2"></i>
+        </button>
+       </div>
+       <img src="images/rocket-sign-white-icon-vector-15479813-removebg-preview.png" class="rocket absolute right-[15%] bottom-0 w-[130px]">
+    </div>
+ 
+    <script src="script.js"></script>
+</body>
+</html>
