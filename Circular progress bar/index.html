@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circular Progress Bar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/dc9544463f.js" crossorigin="anonymous"></script>
+    <style>
+        .outer{
+            box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15), -6px -6px 10px -1px rgba(255,255,255,0.7);
+        }
+        .inner{
+            box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+                        inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+                        -0.5px -0px 0px rgba(255,255,255,1),
+                        0.5px 0.5px 0px rgba(0,0,0,0.15),
+                        0px 12px 10px -10px rgba(0,0,0,0.05);
+            ;
+        }
+        circle{
+            animation: anim 2s linear forwards;
+        }
+
+        @keyframes anim{
+            100%{
+                stroke-dashoffset : 154;
+            }
+        }
+    </style>
+</head>
+<body class="h-screen bg-[#EBE5F0] flex justify-center items-center">
+
+    <div class="container w-[160px] h-[160px] relative">
+        <div class="outer w-[160px] h-[160px] rounded-full  p-[18px] ">
+            <div class="inner w-[120px] h-[120px] rounded-full flex justify-center items-center">
+                <div id="number" class="font-bold text-2xl">
+                    
+                </div>
+            </div>
+        </div>
+
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px" class="absolute top-0 laft-0">
+            <defs>
+               <linearGradient id="GradientColor">
+                  <stop offset="0%" stop-color="#e91e63" />
+                  <stop offset="100%" stop-color="#673ab7" />
+               </linearGradient>
+            </defs>
+            <circle cx="80" cy="80" r="70" stroke-linecap="round" fill="none" stroke="url(#GradientColor)" stroke-width="20" 
+            stroke-dasharray="440" 
+            stroke-dashoffset="440"
+             />
+    </svg>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
