@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Menu Design</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/dc9544463f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="container w-full h-screen flex justify-center items-center " style="background: linear-gradient(#BC2B2B, #D27171);">
+
+        <div class="selector w-[330px]">
+            <div class="select-field w-full px-4 py-4 box-border rounded-lg bg-[rgba(255,255,255,0.7)] flex justify-between items-center mb-[15px]">
+                <p id="select">Select Social Media</p>
+                <i id="openMenu" class="fa-solid fa-chevron-down text-black cursor-pointer"></i>
+            </div>
+
+            <ul class="hidden w-full rounded-lg bg-[rgba(255,255,255,0.7)] overflow-hidden" id="list">
+
+                <li class="w-full p-4 cursor-pointer box-border flex gap-[15px] items-center hover:bg-[rgba(255,255,255,0.7)]">
+                    <i class="fa-brands fa-facebook text-[#1B6FE7] text-xl"></i>
+                    <p class="option">Facebook</p>
+                </li>
+
+                <li class="w-full p-4 cursor-pointer box-border flex gap-[15px] items-center hover:bg-[rgba(255,255,255,0.7)]">
+                    <i class="fa-brands fa-youtube text-[#F51E26] text-xl"></i>
+                   <p class="option">Youtube</p> 
+                </li>
+
+                <li class="w-full p-4 cursor-pointer box-border flex gap-[15px] items-center hover:bg-[rgba(255,255,255,0.7)]">
+                    <i class="fa-brands fa-instagram text-[#F40883] text-xl"></i>
+                    <p class="option">Instagram</p>
+                </li>
+
+                <li class="w-full p-4 cursor-pointer box-border flex gap-[15px] items-center hover:bg-[rgba(255,255,255,0.7)]">
+                    <i class="fa-brands fa-pinterest text-[#C1262D] text-xl"></i>
+                    <p class="option">Pintrest</p>
+                </li>
+
+                <li class="w-full p-4 cursor-pointer box-border flex gap-[15px] items-center hover:bg-[rgba(255,255,255,0.7)]">
+                    <i class="fa-brands fa-whatsapp text-[#27B86B] text-xl"></i>
+                    <p class="option">Watsapp</p>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+<script src="script.js"></script>    
+</body>
+</html>
