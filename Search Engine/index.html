@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Engine Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/dc9544463f.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-[#798186] text-white">
+    <h1 class="text-center m-[100px_auto_50px] font-bold text-3xl font-[Cambria]">Image Search Engine</h1>
+    <form  id="search-form" class="w-[90%] max-w-[600px] m-[auto] h-[50px] flex items-center bg-[#D2D5D6] rounded-full">
+        <input type="text" name="search" id="search-box" placeholder="Search here.." class="flex-1 h-full outline-0 bg-transparent p-[0_20px] text-lg text-black">
+        <button class="bg-[#720B67] h-full px-8 rounded-br-full rounded-tr-full right-0"><i class="fa-solid fa-magnifying-glass text-xl text-white"></i></button>
+    </form>
+
+    <div id="search-result" >
+        <button class="hidden bg-[#720B67] text-white py-2 px-6 rounded-md m-[10px_auto_100px] " id="show-more-btn">Show More</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
